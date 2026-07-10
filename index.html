@@ -7,8 +7,8 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #ffffff; /* plain background */
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #ffffff;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -19,6 +19,12 @@
       max-width: 600px;
       padding: 20px;
     }
+    .page-title {
+      font-size: 2em;
+      font-weight: bold;
+      color: #1d3557;
+      margin-bottom: 20px;
+    }
     .wave-icon {
       font-size: 60px;
       color: #0077b6;
@@ -26,7 +32,7 @@
     .persistence-quote {
       font-style: italic;
       margin: 20px 0;
-      font-size: 1.4em;
+      font-size: 1.2em;
       color: #1d3557;
     }
     .author {
@@ -37,7 +43,7 @@
     .stone-button {
       display: inline-block;
       text-decoration: none;
-      font-size: 50px;
+      font-size: 50px; /* stone emoji size */
       margin-top: 20px;
       transition: transform 0.3s;
     }
@@ -45,8 +51,8 @@
       transform: scale(1.2);
     }
     .stone-button p {
-      margin-top: 10px;
-      font-size: 0.9em;
+      margin-top: 6px;
+      font-size: 0.8em; /* smaller text */
       color: #1d3557;
     }
   </style>
@@ -54,6 +60,8 @@
 <body>
 
   <main class="entrance-container">
+    <div class="page-title">Currents & Stones</div>
+
     <div class="wave-icon">🌊</div>
 
     <blockquote class="persistence-quote">
@@ -62,8 +70,8 @@
     <div class="author">— James N. Watkins</div>
 
     <a href="dashboard.html" class="stone-button">
-     ⛰️
-      <p>TAP THE STONE TO CONTINUE</p>
+     🗿
+      <p>TAP THE ROCK TO CONTINUE</p>
     </a>
   </main>
 
