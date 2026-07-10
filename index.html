@@ -58,9 +58,41 @@
     </blockquote>
 
     <a href="dashboard.html" class="stone-button">
-      🪨
-      <p>TAP THE WAVE TO CONTINUE</p>
-    </a>
+  <div class="stone-shape"></div>
+  <p>TAP THE STONE TO CONTINUE</p>
+</a>
+
+<style>
+  .stone-button {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .stone-shape {
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle at 30% 30%, #6d6875, #3d3d3d);
+    border-radius: 50%;
+    box-shadow: inset -4px -4px 8px rgba(255,255,255,0.2),
+                inset 4px 4px 8px rgba(0,0,0,0.4),
+                0 6px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 0 auto;
+  }
+  .stone-shape:hover {
+    transform: scale(1.1);
+    box-shadow: inset -4px -4px 8px rgba(255,255,255,0.3),
+                inset 4px 4px 8px rgba(0,0,0,0.5),
+                0 8px 16px rgba(0,0,0,0.4);
+  }
+  .stone-button p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #1d3557;
+  }
+</style>
+
   </main>
 
 </body>
