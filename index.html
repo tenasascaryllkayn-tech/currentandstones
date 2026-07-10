@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #cce7ff, #ffffff);
+      background: #ffffff; /* plain background */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -26,24 +26,28 @@
     .persistence-quote {
       font-style: italic;
       margin: 20px 0;
-      font-size: 1.2em;
-      color: #333;
+      font-size: 1.4em;
+      color: #1d3557;
+    }
+    .author {
+      font-size: 1em;
+      color: #457b9d;
+      margin-top: 10px;
     }
     .stone-button {
       display: inline-block;
       text-decoration: none;
-      background: #555;
-      color: white;
-      padding: 20px;
-      border-radius: 50%;
-      transition: background 0.3s;
+      font-size: 50px;
+      margin-top: 20px;
+      transition: transform 0.3s;
     }
     .stone-button:hover {
-      background: #333;
+      transform: scale(1.2);
     }
     .stone-button p {
-      margin: 10px 0 0;
+      margin-top: 10px;
       font-size: 0.9em;
+      color: #1d3557;
     }
   </style>
 </head>
@@ -54,45 +58,13 @@
 
     <blockquote class="persistence-quote">
       "A river cuts through rock, not because of its power, but because of its persistence."
-      <br>— James N. Watkins
     </blockquote>
+    <div class="author">— James N. Watkins</div>
 
     <a href="dashboard.html" class="stone-button">
-  <div class="stone-shape"></div>
-  <p>TAP THE STONE TO CONTINUE</p>
-</a>
-
-<style>
-  .stone-button {
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    margin-top: 20px;
-  }
-  .stone-shape {
-    width: 80px;
-    height: 80px;
-    background: radial-gradient(circle at 30% 30%, #6d6875, #3d3d3d);
-    border-radius: 50%;
-    box-shadow: inset -4px -4px 8px rgba(255,255,255,0.2),
-                inset 4px 4px 8px rgba(0,0,0,0.4),
-                0 6px 12px rgba(0,0,0,0.3);
-    transition: transform 0.3s, box-shadow 0.3s;
-    margin: 0 auto;
-  }
-  .stone-shape:hover {
-    transform: scale(1.1);
-    box-shadow: inset -4px -4px 8px rgba(255,255,255,0.3),
-                inset 4px 4px 8px rgba(0,0,0,0.5),
-                0 8px 16px rgba(0,0,0,0.4);
-  }
-  .stone-button p {
-    margin-top: 10px;
-    font-size: 0.9em;
-    color: #1d3557;
-  }
-</style>
-
+     ⛰️
+      <p>TAP THE STONE TO CONTINUE</p>
+    </a>
   </main>
 
 </body>
